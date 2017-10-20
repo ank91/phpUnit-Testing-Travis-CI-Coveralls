@@ -52,8 +52,7 @@ class Calculator
     }
 
     /**
-     * Divide two numbers
-     * //todo Handle divide by zero.
+     * Divide two numbers.
      *
      * @param $x
      * @param $y
@@ -63,7 +62,7 @@ class Calculator
     public function divideTwo($x, $y)
     {
         if($y === 0) {
-            throw new \InvalidArgumentException("The divisor number cannot be zero!");
+            throw new \InvalidArgumentException("The divisor cannot be zero!");
         }
         return $x / $y;
     }
