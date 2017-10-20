@@ -65,7 +65,7 @@ class CalculatorTest extends TestCase
     {
         fwrite(STDOUT, __METHOD__ . "\n");
 
-        $value = $this->calc->divideTwo(4, 0);
-        $this->assertEquals($value, "The divisor number cannot be zero!");
+        $this->expectException(\InvalidArgumentException::class);
+        $value = $this->calc->divideTwo(4, 0);  
     }
 }
