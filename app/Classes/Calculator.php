@@ -62,6 +62,9 @@ class Calculator
      */
     public function divideTwo($x, $y)
     {
+        if($y === 0) {
+            return "The divisor number cannot be zero!";
+        }
         return $x / $y;
     }
 }
